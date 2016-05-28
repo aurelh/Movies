@@ -8,11 +8,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.gabriel.movieapp.DetailActivity.DetailActivityFragment">
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="56dp"
+        android:id="@+id/poster"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
+        android:layout_marginLeft="200dp"
         android:id="@+id/detail_text"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:id="@+id/detail_overview"/>
 
 
 </RelativeLayout>

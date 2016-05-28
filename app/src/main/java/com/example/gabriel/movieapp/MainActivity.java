@@ -121,14 +121,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void getDetails(int position) throws JSONException{
-            JSONObject forecastJson = new JSONObject(getPosters.mForecastJsonStr).getJSONArray("results")
-                    .getJSONObject(position);
-            mExtraText = "Title: "+forecastJson.getString("title")+"\n"
-                        +"Original Title: "+forecastJson.getString("original_title")+"\n"
-                        +"Original Language: "+forecastJson.getString("original_language")+"\n"
-                        +"Released: "+forecastJson.getString("release_date")+"\n"
-                        +"Vote Average: "+forecastJson.getString("vote_average")+"\n"
-                        +"Overview: "+forecastJson.getString("overview")+"\n";
+            mExtraText= new JSONObject(getPosters.mForecastJsonStr).getJSONArray("results")
+                    .getJSONObject(position).toString();
 
         }
 
